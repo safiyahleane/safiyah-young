@@ -1,0 +1,394 @@
+*{
+    box-sizing:border-box;
+    margin:auto;
+    text-align:center;
+}
+@font-face {
+    font-family: Bodoni-moda;
+    src:url('../src/bodoni-moda.ttf')
+}
+
+@font-face {
+    font-family: Bodoni-moda italic;
+    src:url("../src/bodoni-moda-italic.ttf");
+}
+
+@font-face {
+    font-family: cormorant-garamond;
+    src:url("../src/cormorant-garamond.ttf");
+}
+
+@font-face {
+    font-family: elegant;
+    src:url("../src/elegant.ttf");
+}
+
+@font-face {
+    font-family: playfair-display italic;
+    src:url("../src/playfair-display-italics.ttf");
+}
+
+@font-face {
+    font-family: playfair-display;
+    src:url("../src/playfair-display.ttf");
+}
+
+@font-face {
+    font-family: upper-eastside;
+    src:url("../src/upper-east-side.ttf");
+}
+
+@font-face {
+    font-family: theatre-brillion;
+    src:url("../src/theatre-brillion.otf");
+}
+
+h2{
+    font-family: theatre-brillion, sans-serif;
+}
+p{
+    font-family: Baskerville, sans-serif;
+}
+/*Header STARTS */
+
+header{
+    background-color:#E2E4D6;
+    padding: 2% 1%;
+    font-size: calc(3px + 1.5vh);
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    margin-right: 5%;
+    font-family: cormorant-garamond, sans-serif;
+
+}
+li{
+    display: inline;
+    padding: 2%;
+}
+
+a{
+    text-decoration: none;
+    color: #4E6350;
+}
+
+#logo-text{
+    margin-left: 2%;
+    color: #4E6350;
+    font-size: calc(3px + 2vh);
+}
+
+
+/*First Section STARTS */
+body{
+    background-color:#E2E4D6;
+    overflow-x: hidden;
+}
+
+#section-one{
+    display: flex;
+    flex-direction: row;
+}
+
+#hi{
+    padding: 15% 10% 0 10%;
+    margin-left: 10%;
+    text-align: left;
+    font-size: calc(20px + 10vh);
+    color: white;
+}
+
+#description{
+    text-align: left;
+    font-size: calc(6px+ 3vh);
+    padding: 5% 10%;
+    margin-left: 10%;
+    color: #4E6350;
+}
+
+
+#mountain{
+    max-width: 40%;
+    max-height: 70%;
+    position: absolute;
+    top: 12%;
+    right:-15px;
+    z-index: -1;
+    opacity: .7;
+}
+
+#me{
+    max-width: 55%;
+    max-height: 60%;
+    position: relative;
+    top: 20px;
+
+}
+/*Second Section STARTS */
+#section-two{
+    display: flex;
+    flex-direction: row;
+}
+
+#creativity {
+    padding: 0 0 0 10%;
+    font-size: calc(10px + 3vh);
+    color: #4E6350;
+}
+
+#some-text{
+    font-size: calc(5px + 3vh);
+    padding: 2% 15% 0 15%;
+    color: #A2A883;
+}
+
+#deepak{
+    font-size: calc(2px + 2vh);
+    font-style: italic;
+    color: #A2A883;
+
+}
+#more-text{
+    font-size: calc(2px + 2vh);
+    padding-top: 2%;
+    color: #4E6350;
+}
+#clearing{
+    max-width: 150%;
+    max-height: 70%;
+    position: relative;
+    top: 15px;
+    left: -80px;
+}
+
+/*Section Three STARTS */
+#section-three{
+    margin-top: 2%;
+    background-color: #646E66;
+}
+#header{
+    padding-top: 10%;
+    color: white;
+    font-size: calc( 10px + 6vh);
+}
+
+#contact{
+    padding-top: 2%;
+    color: white;
+    font-size: calc( 10px + 3vh);
+    font-family: cormorant-garamond, sans-serif;
+}
+
+
+
+#first, #last{
+    padding: 1% 0;
+    font-family: Baskerville, sans-serif;
+    margin: 2% 1%;
+}
+
+#email{
+    display: block;
+    padding: 1% 0;
+    font-family: Baskerville, sans-serif;
+    margin-bottom: 2%;
+    height: 75px;
+}
+
+#message{
+    display: block;
+    padding: 1% 0;
+    font-family: Baskerville, sans-serif;
+    margin-bottom: 2%;
+    height: 150px;
+}
+
+.input{
+    width: 385px;
+    height: 50px;
+}
+
+.box{
+    width: 800px;
+}
+
+
+
+button{
+    background-color: #A2A883;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: cormorant-garamond, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:hover,
+button:focus {
+    background-color: white;
+    color: #4E6350;
+}
+
+/*Footer STARTS here */
+
+.socials{
+    max-width: 30px;
+}
+
+.socials:hover{
+    animation-name: slideUp;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+
+@keyframes slideUp{
+    to{transform: translateY(-100%)}
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    margin-left: -6%;
+    padding: 5% 0 2% 0;
+    background-color: #646E66;
+    font-family: Baskerville, sans-serif;
+    color: white;
+}
+
+
+#credits{
+    color: #A2A883;
+}
+
+#credits:hover{
+    color: white;
+}
+
+#footer-logo{
+    color: white;
+}
+
+#footer-logo:hover{
+    color: #E2E4D6;
+}
+
+#footer-center{
+    margin-right: 0;
+    margin-left: -7%;
+}
+
+/* TABLET responsive design STARTS */
+@media screen and (max-width: 1024px) {
+
+    /*section one STARTS*/
+    #hi, #title{
+        font-size: calc(4vh + 4vw);
+    }
+
+    #some-text{
+        font-size: calc(2vh + 1vw)
+    }
+
+    #description, #more-text{
+        font-size: calc(1vh + 1vw) ;
+    }
+
+    #me{
+        max-width: 70%;
+    }
+
+    #creativity{
+        padding-right: 5%;
+    }
+    #section-one{
+        padding-bottom: 15%;
+    }
+
+    footer{
+        padding-right: 5%;
+    }
+}
+
+/* MOBILE responsive design STARTS */
+@media screen and (max-width: 480px) {
+
+    /*section one STARTS*/
+    #hi, #title{
+        font-size: calc(4vh + 4vw);
+    }
+
+    #some-text{
+        font-size: calc(2vh + 1vw)
+    }
+
+    #description, #more-text{
+        font-size: calc(1vh + 1vw) ;
+    }
+
+    #me{
+        max-width: 80%;
+    }
+
+    #section-one{
+        padding-bottom: 15%;
+    }
+
+    /*section two STARTS*/
+    #creativity{
+        margin-right: 5%;
+        text-align: center;
+        background-color: #FFFFFF;
+        position: relative;
+        top: 250%;
+        right: 15%;
+        padding: 5% 10%;
+    }
+
+    #clearing{
+        padding-bottom: 5%;
+        max-width: 200%;
+        position: relative;
+        top: 240%;
+        left: 40%;
+        z-index: -1;
+    }
+
+    /*section three STARTS*/
+    #email, #message{
+        width: 85%;
+        margin-bottom: 5%;
+    }
+    #email{
+        margin-top: 3%;
+    }
+
+    /*footer STARTS*/
+    footer{
+        display: block;
+        padding-top: 20%;
+    }
+
+    #footer-left, #footer-center, #footer-right{
+        padding-bottom: 3%;
+        margin-left: 5%;
+    }
+
+}

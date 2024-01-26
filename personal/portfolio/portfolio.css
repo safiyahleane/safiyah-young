@@ -1,0 +1,366 @@
+*{
+    box-sizing:border-box;
+    margin:auto;
+    text-align:center;
+}
+
+@font-face {
+    font-family: Holland;
+    src: url("../src/holland.otf");
+
+
+}
+@font-face {
+    font-family: Bodoni-moda;
+    src:url('../src/bodoni-moda.ttf')
+}
+
+@font-face {
+    font-family: Bodoni-moda italic;
+    src:url("../src/bodoni-moda-italic.ttf");
+}
+
+@font-face {
+    font-family: cormorant-garamond;
+    src:url("../src/cormorant-garamond.ttf");
+}
+
+@font-face {
+    font-family: elegant;
+    src:url("../src/elegant.ttf");
+}
+
+@font-face {
+    font-family: playfair-display italic;
+    src:url("../src/playfair-display-italics.ttf");
+}
+
+@font-face {
+    font-family: playfair-display;
+    src:url("../src/playfair-display.ttf");
+}
+
+@font-face {
+    font-family: upper-eastside;
+    src:url("../src/upper-east-side.ttf");
+}
+
+@font-face {
+    font-family: theatre-brillion;
+    src:url("../src/theatre-brillion.otf");
+}
+
+main h2{
+    font-family: theatre-brillion, sans-serif;
+    font-size: calc(20px + 10vh);
+    color: #4E6350;
+}
+p{
+    font-family: Baskerville, sans-serif;
+}
+/*Header STARTS */
+
+header{
+    background-color:#A2A883;
+    padding: 2% 1%;
+    font-size: calc(3px + 1.5vh);
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    margin-right: 5%;
+    font-family: cormorant-garamond, sans-serif;
+
+}
+li{
+    display: inline;
+    padding: 2%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#logo-text{
+    margin-left: 2%;
+    color: white;
+    font-size: calc(3px + 2vh);
+    font-family: theatre-brillion, sans-serif;
+}
+
+/*First Section STARTS */
+body{
+    background-color: white;
+    overflow-x: hidden;
+}
+
+#portfolio{
+    padding-top: 5%;
+    color: #646E66;
+    font-size: calc(20px + 15vh);
+    font-family: theatre-brillion, sans-serif;
+}
+
+
+.subtitle{
+    color: #A2A883;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    font-family: Holland, sans-serif;
+    font-size: calc(8px + 8vh);
+}
+
+#sub{
+    display: inline;
+    padding: -2%;
+}
+
+#sub a{
+    text-decoration: none;
+    color: #687450;
+    font-size: calc(3px + 2vh);
+}
+
+/* Slideshow STARTS */
+#slideshow-container{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width:auto;
+    padding: 5vw;
+    color: #687450;
+    transition: 0.6s ease;
+    user-select: none;
+    font-size: calc( 2px + 5vh );
+}
+
+.next{
+    right:0;
+}
+
+.prev:hover, .next:hover{
+    color: #E2E4D6;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+
+}
+
+main img {
+    max-width: 100%;
+    margin: auto;
+    animation-name: fade;
+    animation-duration: 2s
+}
+
+#charmed, #biltmore, #baby{
+    max-width: 80%;
+}
+
+#sunset, #canes{
+    max-width: 50%;
+    max-height: 40%;
+}
+
+#picnic{
+    max-width: 30%;
+    max-height: 20%;
+}
+
+ /*Writing STARTS */
+
+#writing{
+    padding-bottom: 0;
+}
+.writing-sub{
+    font-family: Baskerville, sans-serif;
+    font-size: calc(3px + 3vh);
+    font-style: italic;
+    color: #4E6350;
+    padding-bottom: 5%;
+}
+
+#writing-one, #writing-two{
+    display: flex;
+    flex-direction: row;
+
+}
+
+#writing-one{
+    padding-top: 5%;
+}
+
+#blog-posts{
+    padding: 5% 0 2% 0;
+    font-family: Baskerville, sans-serif;
+    font-size: calc(3px + 3vh);
+    font-style: italic;
+    color: #4E6350;
+}
+
+.blog-post{
+    padding: 3% 1% 5% 1%;
+    max-width: 100%;
+}
+
+.blog-post:hover{
+    opacity: .5;
+}
+
+.border{
+    border: #A2A883 solid 20px;
+}
+
+
+/*Video Editing STARTS*/
+
+
+#edit{
+    color: white;
+}
+.video{
+    max-width: 60%;
+}
+
+/*Product*/
+#background-green{
+    background-color: #A2A883;
+}
+ #product{
+     color: white;
+ }
+
+ .card{
+     max-width: 25%;
+     max-height: 25%;
+     padding: 3% 1% 2% 1%;
+ }
+
+ #product-caption{
+     color: #E2E4D6;
+     font-family: cormorant-garamond, sans-serif;
+     font-size: calc(2px + 2vh);
+     padding-bottom: 5%;
+ }
+
+/* Example Ad Campaign adn WEB Dev. */
+#campaign-credit , #farfalla-credit{
+    font-family: Baskerville, sans-serif;
+    font-size: calc(2px + 2vh);
+    margin: 2% 20% 0 20%;
+    color: #646E66;
+
+}
+
+#farfalla-credit{
+    margin: 5% 20% 5% 20%;
+}
+#campaign-credit a, #farfalla-credit a{
+    text-decoration: underline;
+    color: #646E66;
+}
+
+#campaign-credit a:hover, #farfalla-credit a:hover{
+    text-decoration: none;
+    color: #A2A883;
+}
+
+
+/*Social Media Management*/
+#image-one, #image-two, #image-three, #image-four, #image-five, #image-six{
+    max-width: 20%;
+}
+.description{
+    font-family: Baskerville, sans-serif;
+    color: #687450;
+    font-size: calc(1vh + 1vw);
+    padding-bottom: 2%;
+}
+
+@keyframes Expand {
+    100%{transform: scale(115%, 115%)}
+}
+
+#picnics-socials{
+    padding-top: 2.5%;
+}
+
+#image-one:hover{
+    opacity: .5;
+    animation-name: Expand;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+
+}
+
+#image-four:hover{
+    opacity: .5;
+    animation-name: Expand;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+}
+/*Footer STARTS*/
+#top{
+    font-family: cormorant-garamond, sans-serif;
+    color: #4E6350;
+    font-size: calc(.5vw + .5vh);
+    margin-bottom: 2%;
+}
+.socials{
+    max-width: 30px;
+}
+
+.socials:hover{
+    animation-name: slideUp;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+
+@keyframes slideUp{
+    to{transform: translateY(-100%)}
+}
+
+footer{
+    background-color: #A2A883;
+    font-family: Baskerville, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-left: -7%;
+    padding: 2% 0 2% 0;
+}
+
+#credits{
+    color: #646E66;
+}
+
+#credits:hover{
+    color: white;
+}
+
+#footer-name{
+    font-family: theatre-brillion, sans-serif;
+}
+#footer-logo{
+    color: white;
+}
+
+#footer-logo:hover{
+    color: #E2E4D6;
+}
+
+#footer-center{
+    margin-right: 0;
+    margin-left: -7%;
+}

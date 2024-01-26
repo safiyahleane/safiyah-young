@@ -1,0 +1,168 @@
+*{
+    box-sizing:border-box;
+    margin:auto;
+    text-align:center;
+}
+@font-face {
+    font-family: Bodoni-moda;
+    src:url('../src/bodoni-moda.ttf')
+}
+
+@font-face {
+    font-family: Bodoni-moda italic;
+    src:url("../src/bodoni-moda-italic.ttf");
+}
+
+@font-face {
+    font-family: cormorant-garamond;
+    src:url("../src/cormorant-garamond.ttf");
+}
+
+@font-face {
+    font-family: elegant;
+    src:url("../src/elegant.ttf");
+}
+
+@font-face {
+    font-family: playfair-display italic;
+    src:url("../src/playfair-display-italics.ttf");
+}
+
+@font-face {
+    font-family: playfair-display;
+    src:url("../src/playfair-display.ttf");
+}
+
+@font-face {
+    font-family: upper-eastside;
+    src:url("../src/upper-east-side.ttf");
+}
+
+@font-face {
+    font-family: theatre-brillion;
+    src:url("../src/theatre-brillion.otf");
+}
+
+h2{
+    font-family: theatre-brillion, sans-serif;
+}
+p{
+    font-family: Baskerville, sans-serif;
+}
+/*Header STARTS */
+
+header{
+    background-color:#646E66;
+    padding: 2% 1%;
+    font-size: calc(3px + 1.5vh);
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    margin-right: 5%;
+    font-family: cormorant-garamond, sans-serif;
+
+}
+li{
+    display: inline;
+    padding: 2%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#logo-text{
+    margin-left: 2%;
+    color: white;
+    font-size: calc(3px + 2vh);
+}
+
+
+/*First Section STARTS */
+body{
+    background-color:#646E66;
+    overflow-x: hidden;
+}
+
+h1{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: calc(20px + 10vh);
+    font-family: theatre-brillion, sans-serif;
+    color: white;
+}
+
+#background{
+    max-width: 30%;
+    position:absolute;
+    top: 80%;
+    right: 5%;
+    z-index: -1;
+    opacity: .7;
+
+}
+
+p{
+    color: white;
+    font-size: calc(5px + 2vh);
+    font-family: Baskerville, sans-serif;
+}
+
+#me{
+    color: #A2A883;
+}
+
+#me:hover{
+    color: white;
+}
+/*flipping images --> transform: scaleX(-1);*/
+/*Section Three STARTS */
+.socials{
+    max-width: 30px;
+}
+
+.socials:hover{
+    animation-name: slideUp;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+
+@keyframes slideUp{
+    to{transform: translateY(-100%)}
+}
+
+footer{
+    background-color: #E2E4D6;
+    font-family: Baskerville, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-left: -9%;
+    padding: 5% 0 2% 0;
+    margin-top: 15%;
+}
+
+#credits{
+    color: #646E66;
+}
+
+#credits:hover{
+    color: white;
+}
+
+#footer-logo{
+    color: #646E66;
+}
+
+#footer-logo:hover{
+    color: black;
+}
+
+#footer-center{
+    margin-right: 0;
+    margin-left: -7%;
+}

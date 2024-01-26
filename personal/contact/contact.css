@@ -1,0 +1,242 @@
+*{
+    box-sizing:border-box;
+    margin:auto;
+    text-align:center;
+}
+@font-face {
+    font-family: Bodoni-moda;
+    src:url('../src/bodoni-moda.ttf')
+}
+
+@font-face {
+    font-family: Bodoni-moda italic;
+    src:url("../src/bodoni-moda-italic.ttf");
+}
+
+@font-face {
+    font-family: cormorant-garamond;
+    src:url("../src/cormorant-garamond.ttf");
+}
+
+@font-face {
+    font-family: elegant;
+    src:url("../src/elegant.ttf");
+}
+
+@font-face {
+    font-family: playfair-display italic;
+    src:url("../src/playfair-display-italics.ttf");
+}
+
+@font-face {
+    font-family: playfair-display;
+    src:url("../src/playfair-display.ttf");
+}
+
+@font-face {
+    font-family: upper-eastside;
+    src:url("../src/upper-east-side.ttf");
+}
+
+@font-face {
+    font-family: theatre-brillion;
+    src:url("../src/theatre-brillion.otf");
+}
+
+h2{
+    font-family: theatre-brillion, sans-serif;
+}
+p{
+    font-family: Baskerville, sans-serif;
+}
+/*Header STARTS */
+
+header{
+    background-color:#A2A883;
+    padding: 2% 1%;
+    font-size: calc(3px + 1.5vh);
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    margin-right: 5%;
+    font-family: cormorant-garamond, sans-serif;
+
+}
+li{
+    display: inline;
+    padding: 2%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#logo-text{
+    margin-left: 2%;
+    color: white;
+    font-size: calc(3px + 2vh);
+}
+
+/*First Section STARTS */
+body{
+    background-color: white;
+    overflow-x: hidden;
+}
+
+/*Form STARTS*/
+#header{
+    padding-top: 10%;
+    color: #646E66;
+    font-size: calc(20px + 15vh);
+}
+
+main p{
+    color: #A2A883;
+    font-family: Baskerville, sans-serif;
+    font-style: italic;
+    font-size: calc(2px + 3vh);
+}
+
+#first, #last{
+    padding: 1% 0;
+    font-family: Baskerville, sans-serif;
+    margin: 2% 1%;
+    background-color: #E2E4D6;
+}
+
+#email{
+    display: block;
+    padding: 1% 0;
+    font-family: Baskerville, sans-serif;
+    margin-bottom: 2%;
+    height: 75px;
+    background-color: #E2E4D6;
+}
+
+#message{
+    display: block;
+    padding: 1% 0;
+    font-family: Baskerville, sans-serif;
+    margin-bottom: 2%;
+    height: 150px;
+    background-color: #E2E4D6;
+}
+
+.input{
+    width: 385px;
+    height: 50px;
+}
+
+.box{
+    width: 800px;
+}
+
+button{
+    background-color: #A2A883;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: cormorant-garamond, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:hover,
+button:focus {
+    background-color: #646E66;
+    color: white;
+}
+
+main{
+    margin-bottom: -10%;
+}
+ #split{
+     display: flex;
+     flex-direction: row;
+     padding-top: 5%;
+     margin-right: 0;
+ }
+
+ h4{
+     font-family: theatre-brillion, sans-serif;
+     font-style: italic;
+     font-size: calc(5px + 5vh);
+     color: #646E66;
+ }
+main li{
+    display: inline;
+    padding: 2%;
+}
+
+main a{
+    color: #A2A883;
+    font-size: calc(5px + 2vh);
+
+}
+
+main a:hover{
+    color: #646E66;
+}
+/*Footer STARTS*/
+.socials{
+    max-width: 30px;
+}
+
+.socials:hover{
+    animation-name: slideUp;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+
+@keyframes slideUp{
+    to{transform: translateY(-100%)}
+}
+
+footer{
+    background-color:#A2A883;
+    font-family: Baskerville, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-left: -5%;
+    padding: 2% 0 2% 0;
+    margin-top: 15%;
+}
+
+#credits{
+    color: #646E66;
+}
+
+#credits:hover{
+    color: white;
+}
+
+#footer-logo{
+    color: #646E66;
+}
+
+#footer-logo:hover{
+    color: #E2E4D6;
+}
+#footer-center{
+    margin-right: 0;
+    margin-left: -7%;
+}
